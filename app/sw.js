@@ -7,7 +7,7 @@
  *
  * Increment this to force cache to clear.
  */
-var CACHE_VERSION = 125495;
+var CACHE_VERSION = 125502;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.
@@ -28,10 +28,8 @@ var CACHED_FILES = [
   '_locales/de/messages.json',
   '_locales/en/messages.json',
   '_locales/it/messages.json',
-  'app.info.js',
   'app/toolrun_lib.js',
   'app/view_toolrun.js',
-  'caterpillar/caterpillar.js',
   'caterpillar/register_sw.js',
   'caterpillar/sw_static.js',
   'css/general.css',
@@ -58,13 +56,7 @@ var CACHED_FILES = [
   'lib/jquery-ui-1.8.23.min.js',
   'lib/list.js',
   'lib/sprintf-0.7-beta1.js',
-  'main.js',
   'manifest.json'
 ];
 
-importScripts('caterpillar/caterpillar.js');
 importScripts('caterpillar/sw_static.js');
-
-// TODO(Caterpillar): Edit background scripts to remove chrome.app.runtime
-// dependence.
-importScripts('main.js');
