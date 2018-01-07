@@ -7,7 +7,7 @@
  *
  * Increment this to force cache to clear.
  */
-var CACHE_VERSION = 125508;
+var CACHE_VERSION = 125509;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.
@@ -25,9 +25,9 @@ var CACHED_FILES = [
   'Counter_16.png',
   'Counter_24.png',
   'Counter_48.png',
-  '_locales/de/messages.json',
-  '_locales/en/messages.json',
-  '_locales/it/messages.json',
+  '_locales/de/de_translations.js',
+  '_locales/en/en_translations.js',
+  '_locales/it/it_translations.js',
   'app/toolrun_lib.js',
   'app/view_toolrun.js',
   'caterpillar/register_sw.js',
@@ -56,6 +56,7 @@ var CACHED_FILES = [
   'lib/jquery-ui-1.8.23.min.js',
   'lib/list.js',
   'lib/sprintf-0.7-beta1.js',
+  'lib/i18next.min.js',
   'manifest.json'
 ];
 

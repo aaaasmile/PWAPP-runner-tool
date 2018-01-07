@@ -1,232 +1,250 @@
+
 var run_view = {};
 
 
 $(document).ready(function () {
     run_view.set_deafult_values_inctrl();
-
-    // Toolbar teo/real table
-    $("#btNewDetPass")
-        .html(run_view.getTranslMessage('msg__nuovi_dati'))
-        .button({
-            text: false,
-            icons: {
-                primary: "ui-icon-document"
-            }
-        }).click(function () {
-            run_view.teoreal_newdataset();
-        });
-
-    $("#btEditDetPass")
-        .html(run_view.getTranslMessage('msg__cambia_dett'))
-        .button({
-            text: false,
-            icons: {
-                primary: "ui-icon-pencil"
-            }
-        }).click(function () {
-            run_view.teoreal_show_edit_dlg();
-        });
-
-    $("#btCalcDetTeoreal")
-        .html(run_view.getTranslMessage('msg__tabella_teo'))
-        .button().click(function () {
-            run_view.confronta_tabella();
-            run_view.set_result_to('liCalcDetTeoreal');
-        });
-
-    // toolbar
-    $("#btDistMara")
-        .html(run_view.getTranslMessage('msg__maratona'))
-        .button().click(function () {
-            run_view.set_distance(42.2);
-        });
-    $("#btDistHM")
-        .html(run_view.getTranslMessage('msg__mezza_marat'))
-        .button().click(function () {
-            run_view.set_distance(21.1);
-        });
-    $("#btDist10k")
-        .html(run_view.getTranslMessage('btDist10k'))
-        .button().click(function () {
-            run_view.set_distance(10.0);
-        });
-    $("#btDist5k")
-        .html(run_view.getTranslMessage('btDist5k'))
-        .button().click(function () {
-            run_view.set_distance(5.0);
-        });
-    $("#btDist1k")
-        .html(run_view.getTranslMessage('btDist1k'))
-        .button().click(function () {
-            run_view.set_distance(1.0);
-        });
-    $("#btDistClearRes")
-        .html(run_view.getTranslMessage('msg__cancella_ri'))
-        .button().click(function () {
-            run_view.clear_result();
-        });
-
-    // buttons
-
-    $("#btCalcMean")
-        .html(run_view.getTranslMessage('msg__calcola_med'))
-        .button().click(function () {
-            run_view.mean_vel();
-            run_view.set_result_to('liCalcMean');
-        });
-    $("#btFinalTime")
-        .html(run_view.getTranslMessage('msg__calcola_tem'))
-        .button().click(function () {
-            run_view.tempo_finale();
-            run_view.set_result_to('liFinalTime');
-        });
-    $("#btCalcTableRangeVel")
-        .html(run_view.getTranslMessage('msg__converti_ve'))
-        .button().click(function () {
-            run_view.calculate_table_range_vel();
-            run_view.set_result_to('liCalcTableRangeVel');
-        });
-    $("#btMinutiCorsi")
-        .html(run_view.getTranslMessage('msg__calcola_tem'))
-        .button().click(function () {
-            run_view.minuti_corsi();
-            run_view.set_result_to('liMinutiCorsi');
-        });
-    $("#btTablePerDist")
-        .html(run_view.getTranslMessage('msg__tabella_pas'))
-        .button().click(function () {
-            run_view.tabella_per_dist();
-            run_view.set_result_to('liTablePerDist');
-        });
-    $("#btPercPulsMax")
-        .html(run_view.getTranslMessage('msg__percentuali'))
-        .button().click(function () {
-            run_view.freq_puls_table();
-            run_view.set_result_to('liPercPulsMax');
-        });
-    $("#btEqTempi")
-        .html(run_view.getTranslMessage('msg__equivalenza'))
-        .button().click(function () {
-            run_view.equilval_tempi();
-            run_view.set_result_to('liEqTempi');
-        });
-    $("#btSommaTempi")
-        .html(run_view.getTranslMessage('msg__somma_i_tem'))
-        .button().click(function () {
-            run_view.somma_tempi();
-            run_view.set_result_to('idSommaTempi');
-        });
-    $("#btSottrTempi")
-        .html(run_view.getTranslMessage('msg__sottrae_i_t'))
-        .button().click(function () {
-            run_view.sottr_tempi();
-            run_view.set_result_to('idSommaTempi');
-        });
-    $("#btRisSumInT1")
-        .html(run_view.getTranslMessage('msg__risultato_i'))
-        .button().click(function () {
-            run_view.partial_sum_in_t1();
-        });
-    $("#btSumLastTime")
-        .button().click(function () {
-            run_view.teoreal_sum_relative_to_previoustime();
-        });
-
-    // labels
-    $("#msgDis1").html(run_view.getTranslMessage('msg__distanza_es'));
-    $("#msgTime1").html(run_view.getTranslMessage('msg__tempo_es__0'));
-    $("#msgDis2").html(run_view.getTranslMessage('msg__distanza_es_1'));
-    $("#msgVelAlKm").html(run_view.getTranslMessage('msg__velocita_al'));
-    $("#msgDis3").html(run_view.getTranslMessage('msg__distanza_es'));
-    $("#msgVelKmh12").html(run_view.getTranslMessage('msg__velocita_al_1'));
-    $("#msgDis4Hm").html(run_view.getTranslMessage('msg__distanza_es_2'));
-    $("#msgVelAlkm1").html(run_view.getTranslMessage('msg__velocita_al_2'));
-    $("#msgPassoOStep").html(run_view.getTranslMessage('msg__passo_o_ste'));
-    $("#msgPolsoMax").html(run_view.getTranslMessage('custmsg_polsomax'));
-    $("#msgDist10km").html(run_view.getTranslMessage('msg__distanza_es_3'));
-    $("#msgTempo3736").html(run_view.getTranslMessage('msg__tempo_es__0'));
-    $("#msgDistObbiet").html(run_view.getTranslMessage('msg__distanza_ob'));
-    $("#msgVelTeo").html(run_view.getTranslMessage('msg__velocita_te'));
-    $("#msgPassRealiPar").html(run_view.getTranslMessage('msg__dettaglio_p'));
-    $("#msgT1").html(run_view.getTranslMessage('msg__tempo_1'));
-    $("#msgT2").html(run_view.getTranslMessage('msg__tempo_2'));
-    $("#msgRangeVelOpt").html(run_view.getTranslMessage('msg__serie_di_ve'));
-    $("#msgFunUtil").html(run_view.getTranslMessage('msg__funzioni_ut'));
-    $("#tbCmdLabel").html(run_view.getTranslMessage('msgl1__comandi'));
-    $("#tbCmdTempo").html(run_view.getTranslMessage('msgl1__tempo'));
-    $("#tbCmdTempo2").html(run_view.getTranslMessage('msgl1__tempo'));
-    $("#tbLastTimeLbl").html(run_view.getTranslMessage('msgl1__previous_ti'));
-   
-
-    $("#cmbDisteq").combobox();
-    $("#cmbDisteq_goal").combobox();
-
-    // dialogo della lista tempi effettivi
-    $("#dialog-form-teoreal").dialog({
-        autoOpen: false,
-        height: 540,
-        width: 310,
-        modal: true,
-        title: run_view.getTranslMessage('msgl1__tabella_dat'),
-        buttons: [
-            {
-                text: run_view.getTranslMessage('msg__aggiungi'),
-                click: function () {
-                    run_view.teoreal_add_new_item();
-                }
+    // initialize translator
+    i18next.init({
+        lng: 'de',
+        debug: true,
+        resources: {
+            de: {
+                translation: g_german_translations
             },
-            {
-                text: run_view.getTranslMessage('msg__ok'),
-                click: function () {
-                    $(this).dialog("close");
-                    run_view.tabeff_in_ctrl();
-                }
+            en: {
+                translation: g_english_translations
             },
-            {
-                text: run_view.getTranslMessage('msg__cancella'),
-                click: function () {
-                    $(this).dialog("close");
-                }
+            it: {
+                translation: g_italian_translations
             }
-        ],
-        close: function () { }
-    });
-
-    // dialogo per cambiare un singolo record della lista tempi effettivi
-    $("#dialog-form-edit-eff").dialog({
-        autoOpen: false,
-        height: 200,
-        width: 400,
-        modal: true,
-        title: run_view.getTranslMessage('msgl1__tempo_effet'),
-        buttons: [
-            {
-                text: run_view.getTranslMessage('msg__ok'),
-                click: function () {
-                    $(this).dialog("close");
-                    run_view.tabeff_item_edit();
-                }
-            },
-            {
-                text: run_view.getTranslMessage('msg__cancella'),
-                click: function () {
-                    run_view.teoreal_add_new_item_cancel();
-                    $(this).dialog("close");
-                }
-            }
-        ],
-        close: function () { }
-    });
-
-    $("#detTabRealData").delegate('td', 'mouseover mouseleave', function (e) {
-        if (e.type == 'mouseover') {
-            $(this).parent().addClass("hover");
         }
-        else {
-            $(this).parent().removeClass("hover");
-        }
-    });
+    }, function (err, t) {
+        // initialized and ready to go!
 
+        // Toolbar teo/real table
+        $("#btNewDetPass")
+            .html(run_view.getTranslMessage('msg__nuovi_dati'))
+            .button({
+                text: false,
+                icons: {
+                    primary: "ui-icon-document"
+                }
+            }).click(function () {
+                run_view.teoreal_newdataset();
+            });
+
+        $("#btEditDetPass")
+            .html(run_view.getTranslMessage('msg__cambia_dett'))
+            .button({
+                text: false,
+                icons: {
+                    primary: "ui-icon-pencil"
+                }
+            }).click(function () {
+                run_view.teoreal_show_edit_dlg();
+            });
+
+        $("#btCalcDetTeoreal")
+            .html(run_view.getTranslMessage('msg__tabella_teo'))
+            .button().click(function () {
+                run_view.confronta_tabella();
+                run_view.set_result_to('liCalcDetTeoreal');
+            });
+
+        // toolbar
+        $("#btDistMara")
+            .html(run_view.getTranslMessage('msg__maratona'))
+            .button().click(function () {
+                run_view.set_distance(42.2);
+            });
+        $("#btDistHM")
+            .html(run_view.getTranslMessage('msg__mezza_marat'))
+            .button().click(function () {
+                run_view.set_distance(21.1);
+            });
+        $("#btDist10k")
+            .html(run_view.getTranslMessage('btDist10k'))
+            .button().click(function () {
+                run_view.set_distance(10.0);
+            });
+        $("#btDist5k")
+            .html(run_view.getTranslMessage('btDist5k'))
+            .button().click(function () {
+                run_view.set_distance(5.0);
+            });
+        $("#btDist1k")
+            .html(run_view.getTranslMessage('btDist1k'))
+            .button().click(function () {
+                run_view.set_distance(1.0);
+            });
+        $("#btDistClearRes")
+            .html(run_view.getTranslMessage('msg__cancella_ri'))
+            .button().click(function () {
+                run_view.clear_result();
+            });
+
+        // buttons
+
+        $("#btCalcMean")
+            .html(run_view.getTranslMessage('msg__calcola_med'))
+            .button().click(function () {
+                run_view.mean_vel();
+                run_view.set_result_to('liCalcMean');
+            });
+        $("#btFinalTime")
+            .html(run_view.getTranslMessage('msg__calcola_tem'))
+            .button().click(function () {
+                run_view.tempo_finale();
+                run_view.set_result_to('liFinalTime');
+            });
+        $("#btCalcTableRangeVel")
+            .html(run_view.getTranslMessage('msg__converti_ve'))
+            .button().click(function () {
+                run_view.calculate_table_range_vel();
+                run_view.set_result_to('liCalcTableRangeVel');
+            });
+        $("#btMinutiCorsi")
+            .html(run_view.getTranslMessage('msg__calcola_tem'))
+            .button().click(function () {
+                run_view.minuti_corsi();
+                run_view.set_result_to('liMinutiCorsi');
+            });
+        $("#btTablePerDist")
+            .html(run_view.getTranslMessage('msg__tabella_pas'))
+            .button().click(function () {
+                run_view.tabella_per_dist();
+                run_view.set_result_to('liTablePerDist');
+            });
+        $("#btPercPulsMax")
+            .html(run_view.getTranslMessage('msg__percentuali'))
+            .button().click(function () {
+                run_view.freq_puls_table();
+                run_view.set_result_to('liPercPulsMax');
+            });
+        $("#btEqTempi")
+            .html(run_view.getTranslMessage('msg__equivalenza'))
+            .button().click(function () {
+                run_view.equilval_tempi();
+                run_view.set_result_to('liEqTempi');
+            });
+        $("#btSommaTempi")
+            .html(run_view.getTranslMessage('msg__somma_i_tem'))
+            .button().click(function () {
+                run_view.somma_tempi();
+                run_view.set_result_to('idSommaTempi');
+            });
+        $("#btSottrTempi")
+            .html(run_view.getTranslMessage('msg__sottrae_i_t'))
+            .button().click(function () {
+                run_view.sottr_tempi();
+                run_view.set_result_to('idSommaTempi');
+            });
+        $("#btRisSumInT1")
+            .html(run_view.getTranslMessage('msg__risultato_i'))
+            .button().click(function () {
+                run_view.partial_sum_in_t1();
+            });
+        $("#btSumLastTime")
+            .button().click(function () {
+                run_view.teoreal_sum_relative_to_previoustime();
+            });
+
+        // labels
+        $("#msgDis1").html(run_view.getTranslMessage('msg__distanza_es'));
+        $("#msgTime1").html(run_view.getTranslMessage('msg__tempo_es__0'));
+        $("#msgDis2").html(run_view.getTranslMessage('msg__distanza_es_1'));
+        $("#msgVelAlKm").html(run_view.getTranslMessage('msg__velocita_al'));
+        $("#msgDis3").html(run_view.getTranslMessage('msg__distanza_es'));
+        $("#msgVelKmh12").html(run_view.getTranslMessage('msg__velocita_al_1'));
+        $("#msgDis4Hm").html(run_view.getTranslMessage('msg__distanza_es_2'));
+        $("#msgVelAlkm1").html(run_view.getTranslMessage('msg__velocita_al_2'));
+        $("#msgPassoOStep").html(run_view.getTranslMessage('msg__passo_o_ste'));
+        $("#msgPolsoMax").html(run_view.getTranslMessage('custmsg_polsomax'));
+        $("#msgDist10km").html(run_view.getTranslMessage('msg__distanza_es_3'));
+        $("#msgTempo3736").html(run_view.getTranslMessage('msg__tempo_es__0'));
+        $("#msgDistObbiet").html(run_view.getTranslMessage('msg__distanza_ob'));
+        $("#msgVelTeo").html(run_view.getTranslMessage('msg__velocita_te'));
+        $("#msgPassRealiPar").html(run_view.getTranslMessage('msg__dettaglio_p'));
+        $("#msgT1").html(run_view.getTranslMessage('msg__tempo_1'));
+        $("#msgT2").html(run_view.getTranslMessage('msg__tempo_2'));
+        $("#msgRangeVelOpt").html(run_view.getTranslMessage('msg__serie_di_ve'));
+        $("#msgFunUtil").html(run_view.getTranslMessage('msg__funzioni_ut'));
+        $("#tbCmdLabel").html(run_view.getTranslMessage('msgl1__comandi'));
+        $("#tbCmdTempo").html(run_view.getTranslMessage('msgl1__tempo'));
+        $("#tbCmdTempo2").html(run_view.getTranslMessage('msgl1__tempo'));
+        $("#tbLastTimeLbl").html(run_view.getTranslMessage('msgl1__previous_ti'));
+
+
+        $("#cmbDisteq").combobox();
+        $("#cmbDisteq_goal").combobox();
+
+        // dialogo della lista tempi effettivi
+        $("#dialog-form-teoreal").dialog({
+            autoOpen: false,
+            height: 540,
+            width: 310,
+            modal: true,
+            title: run_view.getTranslMessage('msgl1__tabella_dat'),
+            buttons: [
+                {
+                    text: run_view.getTranslMessage('msg__aggiungi'),
+                    click: function () {
+                        run_view.teoreal_add_new_item();
+                    }
+                },
+                {
+                    text: run_view.getTranslMessage('msg__ok'),
+                    click: function () {
+                        $(this).dialog("close");
+                        run_view.tabeff_in_ctrl();
+                    }
+                },
+                {
+                    text: run_view.getTranslMessage('msg__cancella'),
+                    click: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            ],
+            close: function () { }
+        });
+
+        // dialogo per cambiare un singolo record della lista tempi effettivi
+        $("#dialog-form-edit-eff").dialog({
+            autoOpen: false,
+            height: 200,
+            width: 400,
+            modal: true,
+            title: run_view.getTranslMessage('msgl1__tempo_effet'),
+            buttons: [
+                {
+                    text: run_view.getTranslMessage('msg__ok'),
+                    click: function () {
+                        $(this).dialog("close");
+                        run_view.tabeff_item_edit();
+                    }
+                },
+                {
+                    text: run_view.getTranslMessage('msg__cancella'),
+                    click: function () {
+                        run_view.teoreal_add_new_item_cancel();
+                        $(this).dialog("close");
+                    }
+                }
+            ],
+            close: function () { }
+        });
+
+        $("#detTabRealData").delegate('td', 'mouseover mouseleave', function (e) {
+            if (e.type == 'mouseover') {
+                $(this).parent().addClass("hover");
+            }
+            else {
+                $(this).parent().removeClass("hover");
+            }
+        });
+    });
 
     run_view.dom_is_ready();
 });
@@ -404,7 +422,7 @@ $(document).ready(function () {
     run_view.teoreal_add_new_item = function () {
         var idnew = _teorealDataList.size() + _teoreal_initial_id;
         var last_item = _teorealDataList.get_last();
-        
+
         var new_item_default = prepare_previous_item(last_item, idnew);
         _teorealDataList.add(new_item_default);
         _teorealEditItem = _teorealDataList.get('id', idnew).values();
@@ -526,7 +544,7 @@ $(document).ready(function () {
     run_view.tabeff_in_ctrl = function () {
         var i, item, arr_res = [];
 
-        for (i = 0; i < _teorealDataList.size() ; i++) {
+        for (i = 0; i < _teorealDataList.size(); i++) {
             item = _teorealDataList.items[i];
             arr_res.push(item.values().dist + ";" + item.values().tempo);
         }
@@ -630,10 +648,10 @@ $(document).ready(function () {
     }
 
     run_view.getTranslMessage = function (label, msg_default) {
-        if (chrome.i18n !== undefined) {
-// TODO(Caterpillar): Check usage of i18n.getMessage.
-            var message = chrome.i18n.getMessage(label);
-            console.log("Message i18: ", message);
+        var message = i18next.t(label);
+        console.log('getTranslMessage: ', label, msg_default, message);
+        if (message !== undefined || message != null) {
+            console.log('Provides ', message);
             return message;
         }
         return msg_default;
