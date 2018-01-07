@@ -7,7 +7,7 @@
  *
  * Increment this to force cache to clear.
  */
-var CACHE_VERSION = 125509;
+var CACHE_VERSION = 125510;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.
@@ -57,6 +57,7 @@ var CACHED_FILES = [
   'lib/list.js',
   'lib/sprintf-0.7-beta1.js',
   'lib/i18next.min.js',
+  'lib/i18nextBrowserLanguageDetector.min.js',
   'manifest.json'
 ];
 

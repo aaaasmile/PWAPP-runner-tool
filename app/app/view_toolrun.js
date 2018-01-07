@@ -5,20 +5,21 @@ var run_view = {};
 $(document).ready(function () {
     run_view.set_deafult_values_inctrl();
     // initialize translator
-    i18next.init({
-        lng: 'de',
-        debug: true,
-        resources: {
-            de: {
-                translation: g_german_translations
-            },
-            en: {
-                translation: g_english_translations
-            },
-            it: {
-                translation: g_italian_translations
+    i18next
+        .use(i18nextBrowserLanguageDetector)
+        .init({
+            debug: true,
+            resources: {
+                de: {
+                    translation: g_german_translations
+                },
+                en: {
+                    translation: g_english_translations
+                },
+                it: {
+                    translation: g_italian_translations
+                }
             }
-        }
     }, function (err, t) {
         // initialized and ready to go!
 
