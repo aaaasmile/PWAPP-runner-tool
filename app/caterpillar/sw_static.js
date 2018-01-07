@@ -66,12 +66,12 @@ self.addEventListener('activate', onActivate);
  * @return {response} Fetch response.
  */
 // Il fetch viene chiamato quando l'app richiede dei dati da fonti esterne e le memorizza in cache
-// Questo non è il caso della mia app
+// Questo non è il caso della mia app, ma avviene anche quando vengono richiesti files della stessa app.
 var onFetch = function(e) {
   e.respondWith(caches.open(CACHES['app']).then(cache =>
     matchIgnoreParams(cache, e.request).then(response => {
       if (response){
-        console.log('Fetch from cache');
+        console.log('Fetch from cache', CACHES['app'], CACHE_VERSION);
         return response;
       }
 
