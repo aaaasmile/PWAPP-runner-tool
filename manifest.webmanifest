@@ -1,0 +1,31 @@
+{
+    "background_color": "white", 
+    "display": "minimal-ui", 
+    "icons": [
+        {
+            "sizes": "24x24", 
+            "src": "Counter_24.png"
+        }, 
+        {
+            "sizes": "128x128", 
+            "src": "Counter_128.png"
+        }, 
+        {
+            "sizes": "48x48", 
+            "src": "Counter_48.png"
+        }, 
+        {
+            "sizes": "16x16", 
+            "src": "Counter_16.png"
+        }
+    ], 
+    "lang": "en", 
+    "name": "Runner Tools", 
+    "orientation": "any", 
+    "prefer_related_applications": false, 
+    "related_applications": [], 
+    "short_name": "Runner Tools", 
+    "splash_screens": [], 
+    "start_url": "index.html", 
+    "theme_color": "white"
+}

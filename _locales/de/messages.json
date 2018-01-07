@@ -1,0 +1,350 @@
+﻿{
+    "appName": {
+        "message": "Lauf Tools"
+    },
+    "appDesc": {
+        "message": "Nützliche Tools für den leidenschaftlichen Läufer"
+    },
+    "custmsg___km_nel_tem2": {
+        "message": " Km und Tempo: ",
+        "_orig": " Km nel tempo: "
+    },
+    "custmsg_polsomax": {
+        "message": "Maximale Pulsfrequenz",
+        "_orig": "Polso massimo"
+    },
+    "custmsg_err_nel_formato": {
+        "message": "Formatfehler",
+        "_orig": "Errore nel formato "
+    },
+    "custmsg_aspetto_una_stringa": {
+        "message": ", erwarte eine Zeichenkette in mm:ss",
+        "_orig": ", aspetto una stringa come mm:ss"
+    },
+    "custmsg_ore_minuti_secondi": {
+        "message": "Stunden oder Sekunden sind nicht korrekt (",
+        "_orig": "Ore, minuti o secondi non sono in range ("
+    },
+    "custmsg_minuti_o_secondi": {
+        "message": "Minuten oder Sekunden sind nicht korrekt (",
+        "_orig": "minuti o secondi non sono in range ("
+    },
+    "custmsg_formato_del_tempo_non": {
+        "message": "Zeitformat ist nicht korrekt für ",
+        "_orig": "Formato del tempo non corretto per"
+    },
+    "custmsg_errore_formato_equiv": {
+        "message": "Äquivalenz-Berechnung Fehler, Distanz nicht erkannt",
+        "_orig": "Errore formato equivalenza distanze non riconosciuto"
+    },
+    "custmsg_errore_nel_formato_di": {
+        "message": "Formatfehler von ",
+        "_orig": "Errore nel formato di "
+    },
+    "custmsg_il_separatore_va_mes": {
+        "message": ", das Trennzeichen ; soll zwischen Km und Zeit sein",
+        "_orig": ", il separatore ;  va messo tra il km e il tempo"
+    },
+    "custmsg_il_tempo": {
+        "message": ", die Zeit ",
+        "_orig": ", il tempo "
+    },
+    "custmsg_va_messo": {
+        "message": " soll im Format hh:mm:ss sein",
+        "_orig": " va messo in formato hh:mm:ss"
+    },
+
+    "msgl1__comandi": {
+        "message": "Befehle",
+        "_orig": "Comandi"
+    },
+    "msgl1__tempo": {
+        "message": "Zeit",
+        "_orig": "Tempo"
+    },
+    "msgl1__tabella_dat": {
+        "message": "Ist-Tabelle",
+        "_orig": "Tabella dati reali"
+    },
+    "msgl1__tempo_effet": {
+        "message": "Ist-Zeit",
+        "_orig": "Tempo effettivo"
+    },
+
+    "msg__calcola_vel": {
+        "message": "Durchschnittsgeschwindigkeit für die Strecke: ",
+        "_orig": "Calcola velocità  media per la distanza: "
+    },
+    "msg__mezza_marat": {
+        "message": "Halbmarathon",
+        "_orig": "Mezza Maratona"
+    },
+    "msg__cancella_ri": {
+        "message": "Ergebnis löschen",
+        "_orig": "Cancella risultato"
+    },
+    "msg__calcola_med": {
+        "message": "Mittelwert-Berechnung",
+        "_orig": "Calcola media"
+    },
+    "msg__calcola_tem": {
+        "message": "Endzeit-Berechnung",
+        "_orig": "Calcola tempo finale"
+    },
+    "msg__converti_ve": {
+        "message": "Geschwindigkeit Umwandlung",
+        "_orig": "Converti velocità"
+    },
+    "msg__calcola_tem_1": {
+        "message": "Endzeit für ",
+        "_orig": "Calcola tempo finale"
+    },
+    "msg__tabella_pas": {
+        "message": "Tempotabelle Zwischenzeiten",
+        "_orig": "Tabella passaggi"
+    },
+    "msg__percentuali": {
+        "message": "Prozent maximale Pulsfrequenz",
+        "_orig": "Percentuali polso massimo"
+    },
+    "msg__equivalenza": {
+        "message": "Wettkampfzeit-Rechner",
+        "_orig": "Equivalenza tempi"
+    },
+    "msg__tabella_teo": {
+        "message": "Tabelle Soll-Ist",
+        "_orig": "Tabella teorico reale"
+    },
+    "msg__cambia_dett": {
+        "message": "Angaben ändern",
+        "_orig": "Cambia dettagli"
+    },
+    "msg__nuovi_dati": {
+        "message": "Neue Daten",
+        "_orig": "Nuovi dati"
+    },
+    "msg__somma_i_tem": {
+        "message": "Zeiten summieren",
+        "_orig": "Somma i tempi"
+    },
+    "msg__sottrae_i_t": {
+        "message": "Zeiten subtrahieren",
+        "_orig": "Sottrae i tempi"
+    },
+    "msg__risultato_i": {
+        "message": "Ergebnis in T1",
+        "_orig": "Risultato in T1"
+    },
+    "msg__maratona": {
+        "message": "Marathonlauf",
+        "_orig": "Maratona"
+    },
+    "msg__tempo_1": {
+        "message": "Zeit 1",
+        "_orig": "Tempo 1"
+    },
+    "msg__tempo_2": {
+        "message": "Zeit 2",
+        "_orig": "Tempo 2"
+    },
+    "msg__dettaglio_p": {
+        "message": "Kommagetrennte Ist-Elemente. Ein Element ist eine Distanz und eiene strichpunktgetrennte Zeit (z.B. 5; 0:24:11). Zum Beispiel Rom Marathon [\"5;0:30:16,10;0:57:37, 15;1:24:29, 21.097;1:56:56, 25;2:17:29,30;2:44:08,35;3:10:18, 40;3:38:18, 42.2;3:50:16\"]",
+        "_orig": "Dettaglio passaggi reali con elementi separati da virgola, singolo elemento (km e tempo in hh:mm:ss) separato da punto e virgola. Esempio maratona di Roma [\"5;0:30:16,10;0:57:37, 15;1:24:29, 21.097;1:56:56, 25;2:17:29,30;2:44:08,35;3:10:18, 40;3:38:18, 42.2;3:50:16\""
+    },
+    "msg__velocita_te": {
+        "message": "Theoretische Lauftempo (z.B. \"5:27\") min/km",
+        "_orig": "Velocità teorica al Km (es. \"5:27\") in min/km"
+    },
+    "msg__funzioni_ut": {
+        "message": "Tools für Lauftraining und Wettkämpfe",
+        "_orig": "Funzioni utili per il corridore"
+    },
+    "msg__distanza_es": {
+        "message": "Distanz (z.B. \"5.1\") in Kilometern",
+        "_orig": "Distanza (es \"5.1\") in Km"
+    },
+    "msg__distanza_es_1": {
+        "message": "Distanz (z.B. \"42.2\") in Kilometern",
+        "_orig": "Distanza (es \"42.2\") in Km"
+    },
+    "msg__tempo_es__0": {
+        "message": "Endzeit (z.B. \"00:37:36\") in hh:mm:ss",
+        "_orig": "Tempo (es. \"00:37:36\") in hh:mm:ss"
+    },
+    "msg__velocita_al": {
+        "message": "Tempo (z.B. \"04:36\") min/km",
+        "_orig": "velocità al Km (es. \"04:36\") in min/km"
+    },
+    "msg__serie_di_ve": {
+        "message": "Geschwindigkeiten in km/h (z.B. \"10,10.2,11.3,11.5,12.9\")",
+        "_orig": "Serie di velocità in Km/h (es. \"10,10.2,11.3,11.5,12.9\")"
+    },
+    "msg__velocita_al_1": {
+        "message": "Tempo (z.B. \"12\") in km/h",
+        "_orig": "Velocità al Km (es. \"12\") in Km/h"
+    },
+    "msg__distanza_es_2": {
+        "message": "Distanz (z.B. \"21.1\") in Kilometern",
+        "_orig": "Distanza (es. \"21.1\") in Km"
+    },
+    "msg__velocita_al_2": {
+        "message": "Tempo (z.B. \"5:27\") in min/km",
+        "_orig": "velocità al Km (es. \"5:27\") in min/km"
+    },
+    "msg__passo_o_ste": {
+        "message": "Schritt (z.B \"5\") in Kilometern",
+        "_orig": "passo o step (es. \"5\") in Km"
+    },
+    "msg__polso_massi": {
+        "message": "Maximalpuls",
+        "_orig": "Polso massimo"
+    },
+    "msg__distanza_es_3": {
+        "message": "Gelaufene Distanz (z.B. \"10km\")",
+        "_orig": "Distanza (es \"10km\")"
+    },
+    "msg__tempo_es__0_1": {
+        "message": "Endzeit (z.B. \"00:37:36\") in hh:mm:ss",
+        "_orig": "Tempo (es. \"00:37:36\") in hh:mm:ss"
+    },
+    "msg__distanza_ob": {
+        "message": "Renndistanz (z.B. \"42.2 km\")",
+        "_orig": "Distanza Obbiettivo (es \"42.2 km\")"
+    },
+    "msg__aggiungi": {
+        "message": "Neu",
+        "_orig": "Aggiungi"
+    },
+    "msg__ok": {
+        "message": "Ok",
+        "_orig": "Ok"
+    },
+    "msg__cancella": {
+        "message": "Abbruch",
+        "_orig": "Cancella"
+    },
+    "msg__calcola_vel_1": {
+        "message": "Durchschnittsgeschwindigkeit für die Strecke: ",
+        "_orig": "Calcola velocità  media per la distanza: "
+    },
+    "msg___km_nel_tem": {
+        "message": " Km und Zeit: ",
+        "_orig": " Km nel tempo: "
+    },
+    "msg__calcola_tem_2": {
+        "message": "Es berechnet Endzeit mit einer Distanz: ",
+        "_orig": "Calcola tempo finale con una distanza:  "
+    },
+    "msg___km_e_veloc": {
+        "message": " Km und Tempo in min/km: ",
+        "_orig": " Km e velocità  al km:  "
+    },
+    "msg__mostra_tabe": {
+        "message": "Tempo-Tabelle für die Serie: ",
+        "_orig": "Mostra tabella velocità  per il range: "
+    },
+    "msg__sono_acceta": {
+        "message": "Nur positive Werte sind erlaubt",
+        "_orig": "Sono accetabili solo valori positivi"
+    },
+    "msg__minuti_cors": {
+        "message": "gelaufenen Minuten mit dem Tempo ",
+        "_orig": "Minuti corsi alla velocità  "
+    },
+    "msg___km_h_per_u": {
+        "message": " Km/h über eine Strecke von ",
+        "_orig": " Km/h per una distanza di "
+    },
+    "msg__tabella_pas_1": {
+        "message": "Tempotabelle Zwischenzeiten für ",
+        "_orig": "Tabella passaggi sui "
+    },
+    "msg___km_con_uno": {
+        "message": " Km, mit einem Schritt von ",
+        "_orig": " Km, con uno step di "
+    },
+    "msg___km_ed_una_": {
+        "message": " Km und eine Geschwindigkeit von: ",
+        "_orig": " Km ed una velocità  di: "
+    },
+    "msg___mm_ss_al_k": {
+        "message": " min/km",
+        "_orig": " min/km al Km"
+    },
+    "msg__valore_batt": {
+        "message": "Maximalen Wert außerhalb des zulässigen Bereichs (50-250)",
+        "_orig": "Valore battito massimo fuori soglia (50-250)"
+    },
+    "msg__tabella_per": {
+        "message": "Prozenttabelle für eiene maximale Pulsfrequenz von ",
+        "_orig": "Tabella percentuali polso "
+    },
+    "msg__calcola_equ": {
+        "message": "Berechnet die Zeit-Äquivalenz zwieschen ",
+        "_orig": "Calcola equivalenza di tempi per: "
+    },
+    "msg___con_tempo_": {
+        "message": " mit Endzeit ",
+        "_orig": " con tempo "
+    },
+    "msg___e_": {
+        "message": " und ",
+        "_orig": " e "
+    },
+    "msg__tabella_tor": {
+        "message": "Soll-Ist Tabelle mit eine Geschwindigkeit: ",
+        "_orig": "Tabella teorico-reale velocità : "
+    },
+    "msg___mm_ss_al_k_1": {
+        "message": " min/km ",
+        "_orig": " min/km al Km "
+    },
+    "msg__modifica": {
+        "message": "Bearbeiten",
+        "_orig": "Modifica"
+    },
+    "msg__rimuovi": {
+        "message": "Löschen",
+        "_orig": "Rimuovi"
+    },
+    "msg___somma_di_": {
+        "message": "Summe von ",
+        "_orig": " Somma di "
+    },
+    "msg___sottrazion": {
+        "message": "Subtraktion: ",
+        "_orig": " Sottrazione: "
+    },
+    "msg__errore_nel_": {
+        "message": "Berechnungsfehler: ",
+        "_orig": "Errore nel calcolo: "
+    },
+    "msg__teorico": {
+        "message": "Soll",
+        "_orig": "Teorico"
+    },
+    "msg__reale": {
+        "message": "IST",
+        "_orig": "REALE"
+    },
+    "msg__delta": {
+        "message": "Delta",
+        "_orig": "Delta"
+    },
+    "msg__pulsazioni": {
+        "message": "Puls",
+        "_orig": "Pulsazioni"
+    },
+    "msg__cambia_dett_1": {
+        "message": "Angaben bearbeiten",
+        "_orig": "Cambia dettagli"
+    },
+    "msg__nuovi_dati_1": {
+      "message": "Neue Daten",
+      "_orig": "Nuovi dati"
+    },
+    "msgl1__previous_ti": {
+          "message": "Vorheriger",
+          "_orig": "Previous Time"
+    }
+}
