@@ -633,7 +633,7 @@ $(document).ready(function () {
         if (chrome.i18n !== undefined) {
 // TODO(Caterpillar): Check usage of i18n.getMessage.
             var message = chrome.i18n.getMessage(label);
-            //console.log("Message i18: ", message);
+            console.log("Message i18: ", message);
             return message;
         }
         return msg_default;

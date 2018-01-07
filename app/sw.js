@@ -7,10 +7,11 @@
  *
  * Increment this to force cache to clear.
  */
-var CACHE_VERSION = 125473;
+var CACHE_VERSION = 125495;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.
+ * Usato nel file sw_static
  */
 var CACHES = {
   'app': 'app-cache-v' + CACHE_VERSION
@@ -58,7 +59,7 @@ var CACHED_FILES = [
   'lib/list.js',
   'lib/sprintf-0.7-beta1.js',
   'main.js',
-  'manifest.webmanifest'
+  'manifest.json'
 ];
 
 importScripts('caterpillar/caterpillar.js');

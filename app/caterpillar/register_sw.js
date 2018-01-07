@@ -16,10 +16,27 @@
  * Registers the service worker sw.js.
  */
 
+ // originale di caterpillar
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('sw.js').catch(e =>
+//     console.warn('Service worker could not be registered with error ', e));
+// } else {
+//   throw new Error('Service workers not supported in this browser. ' +
+//     'Some functionality may be unavailable.');
+// }
+
+// copiato da https://developers.google.com/web/fundamentals/primers/service-workers/
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(e =>
-    console.warn('Service worker could not be registered with error ', e));
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').then(function (registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function (err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
 } else {
   throw new Error('Service workers not supported in this browser. ' +
-                  'Some functionality may be unavailable.');
+    'Some functionality may be unavailable.');
 }
