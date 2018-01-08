@@ -28,7 +28,7 @@ end
 
 
 if $0 == __FILE__
-  filename = 'D:\scratch\caterpillar\converted\pwapp_corsa-tool\app\_locales\en\messages.json'
+  filename = 'D:\scratch\caterpillar\converted\pwapp_corsa-tool\app\_locales\de\messages.json'
   conv = Converter.new
   conv.run(filename)
 end

@@ -1,9 +1,9 @@
-{
+ï»¿{
     "appName": {
         "message": "Lauf Tools"
     },
     "appDesc": {
-        "message": "Nützliche Tools für den leidenschaftlichen Läufer"
+        "message": "NÃ¼tzliche Tools fÃ¼r den leidenschaftlichen LÃ¤ufer"
     },
     "custmsg___km_nel_tem2": {
         "message": " Km und Tempo: ",
@@ -30,11 +30,11 @@
         "_orig": "minuti o secondi non sono in range ("
     },
     "custmsg_formato_del_tempo_non": {
-        "message": "Zeitformat ist nicht korrekt für ",
+        "message": "Zeitformat ist nicht korrekt fÃ¼r ",
         "_orig": "Formato del tempo non corretto per"
     },
     "custmsg_errore_formato_equiv": {
-        "message": "Äquivalenz-Berechnung Fehler, Distanz nicht erkannt",
+        "message": "Ã„quivalenz-Berechnung Fehler, Distanz nicht erkannt",
         "_orig": "Errore formato equivalenza distanze non riconosciuto"
     },
     "custmsg_errore_nel_formato_di": {
@@ -72,15 +72,15 @@
     },
 
     "msg__calcola_vel": {
-        "message": "Durchschnittsgeschwindigkeit für die Strecke: ",
-        "_orig": "Calcola velocità  media per la distanza: "
+        "message": "Durchschnittsgeschwindigkeit fÃ¼r die Strecke: ",
+        "_orig": "Calcola velocitÃ Â  media per la distanza: "
     },
     "msg__mezza_marat": {
         "message": "Halbmarathon",
         "_orig": "Mezza Maratona"
     },
     "msg__cancella_ri": {
-        "message": "Ergebnis löschen",
+        "message": "Ergebnis lÃ¶schen",
         "_orig": "Cancella risultato"
     },
     "msg__calcola_med": {
@@ -93,10 +93,10 @@
     },
     "msg__converti_ve": {
         "message": "Geschwindigkeit Umwandlung",
-        "_orig": "Converti velocità"
+        "_orig": "Converti velocitÃ "
     },
     "msg__calcola_tem_1": {
-        "message": "Endzeit für ",
+        "message": "Endzeit fÃ¼r ",
         "_orig": "Calcola tempo finale"
     },
     "msg__tabella_pas": {
@@ -116,7 +116,7 @@
         "_orig": "Tabella teorico reale"
     },
     "msg__cambia_dett": {
-        "message": "Angaben ändern",
+        "message": "Angaben Ã¤ndern",
         "_orig": "Cambia dettagli"
     },
     "msg__nuovi_dati": {
@@ -153,10 +153,10 @@
     },
     "msg__velocita_te": {
         "message": "Theoretische Lauftempo (z.B. \"5:27\") min/km",
-        "_orig": "Velocità teorica al Km (es. \"5:27\") in min/km"
+        "_orig": "VelocitÃ  teorica al Km (es. \"5:27\") in min/km"
     },
     "msg__funzioni_ut": {
-        "message": "Tools für Lauftraining und Wettkämpfe",
+        "message": "Tools fÃ¼r Lauftraining und WettkÃ¤mpfe",
         "_orig": "Funzioni utili per il corridore"
     },
     "msg__distanza_es": {
@@ -173,15 +173,15 @@
     },
     "msg__velocita_al": {
         "message": "Tempo (z.B. \"04:36\") min/km",
-        "_orig": "velocità al Km (es. \"04:36\") in min/km"
+        "_orig": "velocitÃ  al Km (es. \"04:36\") in min/km"
     },
     "msg__serie_di_ve": {
         "message": "Geschwindigkeiten in km/h (z.B. \"10,10.2,11.3,11.5,12.9\")",
-        "_orig": "Serie di velocità in Km/h (es. \"10,10.2,11.3,11.5,12.9\")"
+        "_orig": "Serie di velocitÃ  in Km/h (es. \"10,10.2,11.3,11.5,12.9\")"
     },
     "msg__velocita_al_1": {
         "message": "Tempo (z.B. \"12\") in km/h",
-        "_orig": "Velocità al Km (es. \"12\") in Km/h"
+        "_orig": "VelocitÃ  al Km (es. \"12\") in Km/h"
     },
     "msg__distanza_es_2": {
         "message": "Distanz (z.B. \"21.1\") in Kilometern",
@@ -189,7 +189,7 @@
     },
     "msg__velocita_al_2": {
         "message": "Tempo (z.B. \"5:27\") in min/km",
-        "_orig": "velocità al Km (es. \"5:27\") in min/km"
+        "_orig": "velocitÃ  al Km (es. \"5:27\") in min/km"
     },
     "msg__passo_o_ste": {
         "message": "Schritt (z.B \"5\") in Kilometern",
@@ -224,8 +224,8 @@
         "_orig": "Cancella"
     },
     "msg__calcola_vel_1": {
-        "message": "Durchschnittsgeschwindigkeit für die Strecke: ",
-        "_orig": "Calcola velocità  media per la distanza: "
+        "message": "Durchschnittsgeschwindigkeit fÃ¼r die Strecke: ",
+        "_orig": "Calcola velocitÃ Â  media per la distanza: "
     },
     "msg___km_nel_tem": {
         "message": " Km und Zeit: ",
@@ -237,11 +237,11 @@
     },
     "msg___km_e_veloc": {
         "message": " Km und Tempo in min/km: ",
-        "_orig": " Km e velocità  al km:  "
+        "_orig": " Km e velocitÃ Â  al km:  "
     },
     "msg__mostra_tabe": {
-        "message": "Tempo-Tabelle für die Serie: ",
-        "_orig": "Mostra tabella velocità  per il range: "
+        "message": "Tempo-Tabelle fÃ¼r die Serie: ",
+        "_orig": "Mostra tabella velocitÃ Â  per il range: "
     },
     "msg__sono_acceta": {
         "message": "Nur positive Werte sind erlaubt",
@@ -249,14 +249,14 @@
     },
     "msg__minuti_cors": {
         "message": "gelaufenen Minuten mit dem Tempo ",
-        "_orig": "Minuti corsi alla velocità  "
+        "_orig": "Minuti corsi alla velocitÃ Â  "
     },
     "msg___km_h_per_u": {
-        "message": " Km/h über eine Strecke von ",
+        "message": " Km/h Ã¼ber eine Strecke von ",
         "_orig": " Km/h per una distanza di "
     },
     "msg__tabella_pas_1": {
-        "message": "Tempotabelle Zwischenzeiten für ",
+        "message": "Tempotabelle Zwischenzeiten fÃ¼r ",
         "_orig": "Tabella passaggi sui "
     },
     "msg___km_con_uno": {
@@ -265,22 +265,22 @@
     },
     "msg___km_ed_una_": {
         "message": " Km und eine Geschwindigkeit von: ",
-        "_orig": " Km ed una velocità  di: "
+        "_orig": " Km ed una velocitÃ Â  di: "
     },
     "msg___mm_ss_al_k": {
         "message": " min/km",
         "_orig": " min/km al Km"
     },
     "msg__valore_batt": {
-        "message": "Maximalen Wert außerhalb des zulässigen Bereichs (50-250)",
+        "message": "Maximalen Wert auÃŸerhalb des zulÃ¤ssigen Bereichs (50-250)",
         "_orig": "Valore battito massimo fuori soglia (50-250)"
     },
     "msg__tabella_per": {
-        "message": "Prozenttabelle für eiene maximale Pulsfrequenz von ",
+        "message": "Prozenttabelle fÃ¼r eiene maximale Pulsfrequenz von ",
         "_orig": "Tabella percentuali polso "
     },
     "msg__calcola_equ": {
-        "message": "Berechnet die Zeit-Äquivalenz zwieschen ",
+        "message": "Berechnet die Zeit-Ã„quivalenz zwieschen ",
         "_orig": "Calcola equivalenza di tempi per: "
     },
     "msg___con_tempo_": {
@@ -293,7 +293,7 @@
     },
     "msg__tabella_tor": {
         "message": "Soll-Ist Tabelle mit eine Geschwindigkeit: ",
-        "_orig": "Tabella teorico-reale velocità : "
+        "_orig": "Tabella teorico-reale velocitÃ Â : "
     },
     "msg___mm_ss_al_k_1": {
         "message": " min/km ",
@@ -304,7 +304,7 @@
         "_orig": "Modifica"
     },
     "msg__rimuovi": {
-        "message": "Löschen",
+        "message": "LÃ¶schen",
         "_orig": "Rimuovi"
     },
     "msg___somma_di_": {
