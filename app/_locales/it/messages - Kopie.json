@@ -1,10 +1,10 @@
-{
+ï»¿{
     "appName": {
         "message": "Corsa - strumenti"
     },
     "appDesc": {
         "message": "Strumenti utili per il bravo corridore.",
-        "description": "Qualche funzione utile per calcolare velocità e tempi di percorrenza per il maratoneta."
+        "description": "Qualche funzione utile per calcolare velocitÃ  e tempi di percorrenza per il maratoneta."
     },
     "btDist10k": {
         "message": "10Km"
@@ -85,8 +85,8 @@
 
 
     "msg__calcola_vel": {
-        "message": "Calcola velocità  media per la distanza: ",
-        "_orig": "Calcola velocità  media per la distanza: "
+        "message": "Calcola velocitÃ Â  media per la distanza: ",
+        "_orig": "Calcola velocitÃ Â  media per la distanza: "
     },
     "msg__mezza_marat": {
         "message": "Mezza Maratona",
@@ -105,8 +105,8 @@
         "_orig": "Calcola tempo finale"
     },
     "msg__converti_ve": {
-        "message": "Converti velocità",
-        "_orig": "Converti velocità"
+        "message": "Converti velocitÃ ",
+        "_orig": "Converti velocitÃ "
     },
     "msg__tabella_pas": {
         "message": "Tabella passaggi",
@@ -161,8 +161,8 @@
         "_orig": "Dettaglio passaggi reali con elementi separati da virgola, singolo elemento (km e tempo in hh:mm:ss) separato da punto e virgola. Esempio maratona di Roma [\"5;0:30:16,10;0:57:37, 15;1:24:29, 21.097;1:56:56, 25;2:17:29,30;2:44:08,35;3:10:18, 40;3:38:18, 42.2;3:50:16\""
     },
     "msg__velocita_te": {
-        "message": "Velocità teorica al Km (es. \"5:27\") in mm:ss",
-        "_orig": "Velocità teorica al Km (es. \"5:27\") in mm:ss"
+        "message": "VelocitÃ  teorica al Km (es. \"5:27\") in mm:ss",
+        "_orig": "VelocitÃ  teorica al Km (es. \"5:27\") in mm:ss"
     },
     "msg__funzioni_ut": {
         "message": "Funzioni utili per il corridore",
@@ -181,24 +181,24 @@
         "_orig": "Tempo (es. \"00:37:36\") in hh:mm:ss"
     },
     "msg__velocita_al": {
-        "message": "velocità al Km (es. \"04:36\") in mm:ss",
-        "_orig": "velocità al Km (es. \"04:36\") in mm:ss"
+        "message": "velocitÃ  al Km (es. \"04:36\") in mm:ss",
+        "_orig": "velocitÃ  al Km (es. \"04:36\") in mm:ss"
     },
     "msg__serie_di_ve": {
-        "message": "Serie di velocità in Km/h (es. \"10,10.2,11.3,11.5,12.9\")",
-        "_orig": "Serie di velocità in Km/h (es. \"10,10.2,11.3,11.5,12.9\")"
+        "message": "Serie di velocitÃ  in Km/h (es. \"10,10.2,11.3,11.5,12.9\")",
+        "_orig": "Serie di velocitÃ  in Km/h (es. \"10,10.2,11.3,11.5,12.9\")"
     },
     "msg__velocita_al_1": {
-        "message": "Velocità al Km (es. \"12\") in Km/h",
-        "_orig": "Velocità al Km (es. \"12\") in Km/h"
+        "message": "VelocitÃ  al Km (es. \"12\") in Km/h",
+        "_orig": "VelocitÃ  al Km (es. \"12\") in Km/h"
     },
     "msg__distanza_es_2": {
         "message": "Distanza (es. \"21.1\") in Km",
         "_orig": "Distanza (es. \"21.1\") in Km"
     },
     "msg__velocita_al_2": {
-        "message": "velocità al Km (es. \"5:27\") in mm:ss",
-        "_orig": "velocità al Km (es. \"5:27\") in mm:ss"
+        "message": "velocitÃ  al Km (es. \"5:27\") in mm:ss",
+        "_orig": "velocitÃ  al Km (es. \"5:27\") in mm:ss"
     },
     "msg__passo_o_ste": {
         "message": "passo o step (es. \"5\") in Km",
@@ -229,8 +229,8 @@
         "_orig": "Cancella"
     },
     "msg__calcola_vel_1": {
-        "message": "Calcola velocità  media per la distanza: ",
-        "_orig": "Calcola velocità  media per la distanza: "
+        "message": "Calcola velocitÃ Â  media per la distanza: ",
+        "_orig": "Calcola velocitÃ Â  media per la distanza: "
     },
     "msg___km_nel_tem": {
         "message": " Km nel tempo: ",
@@ -241,20 +241,20 @@
         "_orig": "Calcola tempo finale con una distanza:  "
     },
     "msg___km_e_veloc": {
-        "message": " Km e velocità  al km:  ",
-        "_orig": " Km e velocità  al km:  "
+        "message": " Km e velocitÃ Â  al km:  ",
+        "_orig": " Km e velocitÃ Â  al km:  "
     },
     "msg__mostra_tabe": {
-        "message": "Mostra tabella velocità  per il range: ",
-        "_orig": "Mostra tabella velocità  per il range: "
+        "message": "Mostra tabella velocitÃ Â  per il range: ",
+        "_orig": "Mostra tabella velocitÃ Â  per il range: "
     },
     "msg__sono_acceta": {
         "message": "Sono accetabili solo valori positivi",
         "_orig": "Sono accetabili solo valori positivi"
     },
     "msg__minuti_cors": {
-        "message": "Minuti corsi alla velocità  ",
-        "_orig": "Minuti corsi alla velocità  "
+        "message": "Minuti corsi alla velocitÃ Â  ",
+        "_orig": "Minuti corsi alla velocitÃ Â  "
     },
     "msg___km_h_per_u": {
         "message": " Km/h per una distanza di ",
@@ -269,8 +269,8 @@
         "_orig": " Km, con uno step di "
     },
     "msg___km_ed_una_": {
-        "message": " Km ed una velocità  di: ",
-        "_orig": " Km ed una velocità  di: "
+        "message": " Km ed una velocitÃ Â  di: ",
+        "_orig": " Km ed una velocitÃ Â  di: "
     },
     "msg___mm_ss_al_k": {
         "message": " mm:ss al Km",
@@ -297,8 +297,8 @@
         "_orig": " e "
     },
     "msg__tabella_tor": {
-        "message": "Tabella teorico-reale velocità : ",
-        "_orig": "Tabella teorico-reale velocità : "
+        "message": "Tabella teorico-reale velocitÃ Â : ",
+        "_orig": "Tabella teorico-reale velocitÃ Â : "
     },
     "msg___mm_ss_al_k_1": {
         "message": " mm:ss al Km ",
