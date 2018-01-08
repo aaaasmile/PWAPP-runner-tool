@@ -2,7 +2,8 @@
 require 'rubygems'
 require 'json'
 
-# mi funziona solo se il file messages.json è in formato iso-8859-1
+# mi funziona solo se il file messages.json è in formato iso-8859-1. Ho provato con il file in formato utf-8, ma 
+# sembra che json.parse codifichi ancora una volta in utf-8 e non funziona.
 
 class Converter
   def run(filename)
@@ -16,7 +17,9 @@ class Converter
     #exit
     lines = []
     all_msgs.each do |k,v| 
-      str = "\"#{k}\": \"#{v['message']}\""
+      temp = v['message']
+      temp = temp.gsub('"',"'")
+      str = "\"#{k}\": \"#{temp}\""
       lines << str
     end
     lines.each{|l| puts l + ","}
@@ -25,7 +28,7 @@ end
 
 
 if $0 == __FILE__
-  filename = 'D:\scratch\caterpillar\converted\pwapp_corsa-tool\app\_locales\it\messages.json'
+  filename = 'D:\scratch\caterpillar\converted\pwapp_corsa-tool\app\_locales\en\messages.json'
   conv = Converter.new
   conv.run(filename)
 end
