@@ -9,7 +9,7 @@
  * Questo file viene inlcuso da register_sw.js, il quale viene caricato alla fine di index.html, durante la registrazione del
  *  service worker 
  */
-var CACHE_VERSION = 20180218003;
+var CACHE_VERSION = 20180218004;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.

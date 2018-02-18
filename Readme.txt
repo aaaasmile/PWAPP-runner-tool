@@ -6,6 +6,12 @@ ruby -run -e httpd . -p 9090
 
 Url nel browser: http://localhost:9090/app/index.html
 
+== Sviluppo
+Quando si modificano i sorgenti, per ogni deploy va fatto un aggiornamento della versione della cache che si trova in sw.js.
+Uso il formato yyy.mm.dd.001 per incrementare la sua versione usando la data.Sulla stessa data uso 001, 002 e così via.
+Durante lo sviluppo e test si fa senza cambiare continuamente la versione della cache, ma va fatto un Unregister della url che si testa usando
+chrome://serviceworker-internals/. Il cambio della versione della cache va fatto una sola volta.
+
 == Deploy
 Con la console linux di windows nella dir root dell'applicazione:
 (D:\scratch\caterpillar\converted\pwapp_corsa-tool)
