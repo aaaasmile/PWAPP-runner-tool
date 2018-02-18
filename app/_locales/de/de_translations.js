@@ -1,6 +1,9 @@
 var g_german_translations = {
   "appName": "Lauf Tools",
   "appDesc": "Nützliche Tools für den leidenschaftlichen Läufer",
+  "btDist10k": "10Km",
+  "btDist5k": "5Km",
+  "btDist1k": "1Km",
   "custmsg___km_nel_tem2": " Km und Tempo: ",
   "custmsg_polsomax": "Maximale Pulsfrequenz",
   "custmsg_err_nel_formato": "Formatfehler",

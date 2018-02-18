@@ -650,9 +650,9 @@ $(document).ready(function () {
 
     run_view.getTranslMessage = function (label, msg_default) {
         var message = i18next.t(label);
-        console.log('getTranslMessage: ', label, msg_default, message);
+        //console.log('getTranslMessage: ', label, msg_default, message);
         if (message !== undefined || message != null) {
-            console.log('Provides ', message);
+            //console.log('Provides ', message);
             return message;
         }
         return msg_default;

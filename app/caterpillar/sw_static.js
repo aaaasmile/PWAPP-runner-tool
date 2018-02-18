@@ -80,7 +80,10 @@
         if (response) {
           console.log('Fetch from cache', CACHES['app'], CACHE_VERSION);
           return response;
+        }else{
+          console.log('Fetch from web and use cache: ', CACHE_VERSION);
         }
+
 
         // Cache miss, fetch from web.
         var fetchRequest = e.request.clone();
@@ -130,6 +133,7 @@
       caches.open(CACHES['app'])
         .then(cache => cache.addAll(CACHED_FILES)));
     console.log('Installed service worker.');
+    console.log('Cache in use: ', CACHE_VERSION);
   };
   self.addEventListener('install', onInstall);
 

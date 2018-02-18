@@ -5,9 +5,11 @@
 /**
  * Current cache version.
  *
- * Increment this to force cache to clear.
+ * Increment this to force cache to clear.Date + 3 cifre da incrementare per test locali con la stessa data (es: 001)
+ * Questo file viene inlcuso da register_sw.js, il quale viene caricato alla fine di index.html, durante la registrazione del
+ *  service worker 
  */
-var CACHE_VERSION = 125511;
+var CACHE_VERSION = 20180218002;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.
