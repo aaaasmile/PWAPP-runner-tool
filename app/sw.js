@@ -9,7 +9,7 @@
  * Questo file viene inlcuso da register_sw.js, il quale viene caricato alla fine di index.html, durante la registrazione del
  *  service worker 
  */
-var CACHE_VERSION = 20180218002;
+var CACHE_VERSION = 20180218003;
 
 /**
  * Object mapping a cache identifier to the actual, versioned cache name.
@@ -60,6 +60,9 @@ var CACHED_FILES = [
   'lib/sprintf-0.7-beta1.js',
   'lib/i18next.min.js',
   'lib/i18nextBrowserLanguageDetector.min.js',
+  'images/de-flag.jpg',
+  'images/en-flag.jpg',
+  'images/it-flag.jpg',
   'manifest.json'
 ];
 

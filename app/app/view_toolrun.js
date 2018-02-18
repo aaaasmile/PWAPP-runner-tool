@@ -179,7 +179,30 @@ $(document).ready(function () {
 
         $("#cmbDisteq").combobox();
         $("#cmbDisteq_goal").combobox();
+        $("#cmbLang").combobox();
 
+        i18next.on('languageChanged', function(lng) {
+            console.log('language changed to ', lng);
+            //$('#main-body').redraw(); 
+            location.reload();
+        });
+            
+        $("#btChangeEn")
+            .button().click(function () {
+            console.log('Selected langauge is en');
+            i18next.changeLanguage('en');
+        });
+        $("#btChangeDe")
+            .button().click(function () {
+            console.log('Selected langauge is de');
+            i18next.changeLanguage('de');
+        });
+        $("#btChangeIt")
+            .button().click(function () {
+            console.log('Selected langauge is it');
+            i18next.changeLanguage('it');
+        });
+       
         // dialogo della lista tempi effettivi
         $("#dialog-form-teoreal").dialog({
             autoOpen: false,
