@@ -29,5 +29,9 @@ Ora si hanno queste coordinate per l'applicazione deployed:
 Project Console: https://console.firebase.google.com/project/runners-tool/overview
 Hosting URL: https://runners-tool.firebaseapp.com
 
+== Deploy corsa.invido.it
+Ho fatto anche un deploy su corsa.invido.it. Vedi il readme di hetzner per maggiori informazioni.
+Basta un semplice git pull per aggiornare la repository su invido.it.
+
 == Altre informazioni
 Le trovi nel file D:\scratch\caterpillar\Readme.txt
